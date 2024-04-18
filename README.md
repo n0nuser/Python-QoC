@@ -2,6 +2,8 @@
 
 ## Description
 
+Python project template with quality of code in mind. This template is a starting point for Python projects with a focus on quality of code. It includes a set of tools and configurations to help you write better code.
+
 ## Table of Contents
 
 - [Python - Quality of Code](#python---quality-of-code)
