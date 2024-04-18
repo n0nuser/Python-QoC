@@ -31,7 +31,7 @@ class ColoredConsoleFormatter(logging.Formatter):
         return log_message
 
 
-def setup_logging() -> None:
+def setup_logging() -> logging.Logger:
     """Configure logging for the application."""
     # Create a logger object
     logger = logging.getLogger(__name__)
@@ -74,6 +74,8 @@ def setup_logging() -> None:
     logger.addHandler(console_handler)
 
     logging.info("Logging setup complete.")
+
+    return logger
 
 
 def cleanup_old_logs(log_directory: Path, retention_days: int = 7) -> None:
